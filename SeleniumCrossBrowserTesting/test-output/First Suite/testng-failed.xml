@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [First Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FirefoxTests(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.infy.selenium.crossbrowsertesting.CrossBrowserBasicsTest">
+        <methods>
+          <include name="edgeBrowser"/>
+          <include name="chromeBrowser"/>
+        </methods>
+      </class> <!-- com.infy.selenium.crossbrowsertesting.CrossBrowserBasicsTest -->
+      <class name="com.infy.selenium.crossbrowsertesting.CrossBrowserFrameworkWithBeforeAfterTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="launchPage"/>
+        </methods>
+      </class> <!-- com.infy.selenium.crossbrowsertesting.CrossBrowserFrameworkWithBeforeAfterTest -->
+      <class name="com.infy.selenium.crossbrowsertesting.CrossBrowserFrameworkTest">
+        <methods>
+          <include name="chromeBrowser"/>
+        </methods>
+      </class> <!-- com.infy.selenium.crossbrowsertesting.CrossBrowserFrameworkTest -->
+      <class name="com.infy.selenium.crossbrowsertesting.HeadlessBrowserBasicsTest">
+        <methods>
+          <include name="chromeBrowserHeadless"/>
+          <include name="chromeBrowser"/>
+        </methods>
+      </class> <!-- com.infy.selenium.crossbrowsertesting.HeadlessBrowserBasicsTest -->
+    </classes>
+  </test> <!-- FirefoxTests(failed) -->
+</suite> <!-- Failed suite [First Suite] -->
